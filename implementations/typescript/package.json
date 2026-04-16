@@ -1,6 +1,6 @@
 {
   "name": "@lerkolabs/open-pact",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Protocol for Agent Capability and Trust — reference implementation",
   "license": "CC0-1.0",
   "type": "module",
@@ -12,6 +12,9 @@
       "types": "./dist/index.d.ts"
     }
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "node --experimental-vm-modules node_modules/.bin/jest"

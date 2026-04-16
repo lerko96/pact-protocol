@@ -1,0 +1,30 @@
+{
+  "name": "pact-protocol",
+  "version": "0.1.0",
+  "description": "Protocol for Agent Capability and Trust — reference implementation",
+  "license": "CC0-1.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest"
+  },
+  "dependencies": {
+    "@noble/ed25519": "^2.1.0",
+    "multiformats": "^13.1.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@noble/hashes": "^2.2.0",
+    "@types/node": "^25.6.0",
+    "@types/uuid": "^9.0.0",
+    "typescript": "^5.4.0"
+  }
+}

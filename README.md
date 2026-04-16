@@ -8,8 +8,8 @@
 
 ```
 Status:   DRAFT
-Version:  0.1.0
-Date:     2026-04-15
+Spec:     0.1.0
+Date:     2026-04-16
 License:  CC0 (public domain)
 ```
 

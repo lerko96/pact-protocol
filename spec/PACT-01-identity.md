@@ -83,7 +83,7 @@ Fields:
 
 | Field | Required | Description |
 |-------|----------|-------------|
-| `sap` | YES | Protocol version |
+| `pact` | YES | Protocol version |
 | `id` | YES | The agent's DID |
 | `created` | YES | ISO 8601 UTC timestamp |
 | `name` | NO | Human-readable label |
@@ -95,7 +95,7 @@ Capability strings are namespaced. The `pact:` namespace is reserved for this pr
 
 Agent Documents SHOULD be published at:
 ```
-[endpoint]/.well-known/sap-agent.json
+[endpoint]/.well-known/pact-agent.json
 ```
 
 They MAY be distributed through any other mechanism — there is no required registry.
@@ -104,7 +104,7 @@ They MAY be distributed through any other mechanism — there is no required reg
 
 ## 5. Signing
 
-All SAP messages (defined in PACT-02) are signed using the agent's Ed25519 private key. Signatures are over the UTF-8 encoded canonical JSON of the message body.
+All PACT messages (defined in PACT-02) are signed using the agent's Ed25519 private key. Signatures are over the UTF-8 encoded canonical JSON of the message body.
 
 Canonical JSON rules (minimal, no library required):
 - Keys sorted lexicographically

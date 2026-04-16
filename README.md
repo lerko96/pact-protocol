@@ -121,6 +121,17 @@ Implementations in progress:
 
 ---
 
+## Install
+
+```
+npm install open-pact
+```
+
+```typescript
+import { generateKeypair, didFromPublicKey, issueWarrant, createFact } from "open-pact";
+```
+---
+
 ## Why Now?
 
 The AI agent ecosystem is at an inflection point. MCP and A2A have solved the middle of the stack and just entered neutral governance under the Linux Foundation. The layers they leave open — identity, delegation, memory — will either be solved by open standards or by platform lock-in.

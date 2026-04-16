@@ -1,5 +1,5 @@
 {
-  "name": "pact-protocol",
+  "name": "open-pact",
   "version": "0.1.0",
   "description": "Protocol for Agent Capability and Trust — reference implementation",
   "license": "CC0-1.0",

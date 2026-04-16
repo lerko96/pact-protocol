@@ -104,14 +104,15 @@ export async function verifyWarrantChain(
       return { valid: false, reason: `Warrant ${i}: ${result.reason}` };
 
     if (i > 0) {
-      const parent = chain[i - 1];
-      if (chain[i].subject !== parent.issuer)
+      const rootSide = chain[i];     // root-direction warrant (issued to chain[i-1]'s issuer)
+      const leafSide = chain[i - 1]; // leaf-direction warrant (issued by rootSide's subject)
+      if (rootSide.subject !== leafSide.issuer)
         return { valid: false, reason: `Chain broken at ${i}: subject/issuer mismatch` };
 
-      if (!parent.delegable)
-        return { valid: false, reason: `Warrant at ${i - 1} is not delegable` };
+      if (!rootSide.delegable)
+        return { valid: false, reason: `Warrant at ${i} is not delegable` };
 
-      const att = checkAttenuation(parent, chain[i]);
+      const att = checkAttenuation(rootSide, leafSide);
       if (!att.valid) return att;
     }
   }

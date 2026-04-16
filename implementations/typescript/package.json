@@ -1,6 +1,6 @@
 {
-  "name": "open-pact",
-  "version": "0.1.0",
+  "name": "@lerkolabs/open-pact",
+  "version": "0.1.1",
   "description": "Protocol for Agent Capability and Trust — reference implementation",
   "license": "CC0-1.0",
   "type": "module",

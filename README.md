@@ -124,11 +124,11 @@ Implementations in progress:
 ## Install
 
 ```
-npm install open-pact
+npm install @lerkolabs/open-pact
 ```
 
 ```typescript
-import { generateKeypair, didFromPublicKey, issueWarrant, createFact } from "open-pact";
+import { generateKeypair, didFromPublicKey, issueWarrant, createFact } from "@lerkolabs/open-pact";
 ```
 ---
 
